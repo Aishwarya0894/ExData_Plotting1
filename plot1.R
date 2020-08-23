@@ -1,5 +1,6 @@
 # Read data 
 data<-read.csv("household_power_consumption.txt",sep = ";",na.strings = "?",header = TRUE)
+summary(data)
 
 #Filter dates 2007-02-01 and 2007-02-02
 data$Date<-as.Date(data$Date,'%d/%m/%Y')
